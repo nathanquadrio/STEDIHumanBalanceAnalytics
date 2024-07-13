@@ -26,7 +26,7 @@ AmazonS3_node1720894589138 = glueContext.create_dynamic_frame.from_options(forma
 
 # Script generated for node SQL Query
 SqlQuery4511 = '''
-SELECT c.customerName, c.email, c.phone, c.birthDay, c.serialNumber, c.registrationDate, c.lastUpdateDate, c.shareWithResearchAsOfDate, c.shareWithPublicAsOfDate, c.shareWithFriendsAsOfDate
+SELECT DISTINCT c.customerName, c.email, c.phone, c.birthDay, c.serialNumber, c.registrationDate, c.lastUpdateDate, c.shareWithResearchAsOfDate, c.shareWithPublicAsOfDate, c.shareWithFriendsAsOfDate
 FROM customer_trusted c
 INNER JOIN accelerometer_trusted 
 ON accelerometer_trusted.email = c.email
