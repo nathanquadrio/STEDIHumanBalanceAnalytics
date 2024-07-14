@@ -13,7 +13,7 @@ Count of accelerometer_trusted: 40981 rows
 Count of step_trainer_trusted: 14460 rows
 
 Criteria: Filter protected PII with Spark in Glue Jobs
-Submission Requirements: customer_landing_to_trusted_TZ.py has a node that drops rows that do not have data in the sharedWithResearchAsOfDate column.
+Submission Requirements: *customer_landing_to_trusted_TZ.py* has a node that drops rows that do not have data in the sharedWithResearchAsOfDate column.
 
 Criteria: Join Privacy tables with Glue Jobs
-Submission Requirements: accelerometer_landing_to_trusted_TZ.py has a node that inner joins the customer_trusted data with the accelerometer_landing data by emails. The produced table should have only columns from the accelerometer table.
+Submission Requirements: *accelerometer_landing_to_trusted_TZ.py* has a node that inner joins the customer_trusted data with the accelerometer_landing data by emails. The produced table should have only columns from the accelerometer table.
