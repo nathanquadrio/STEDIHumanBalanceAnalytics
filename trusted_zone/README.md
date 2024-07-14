@@ -5,6 +5,7 @@ Criteria: Configure Glue Studio to dynamically update a Glue Table schema from J
 
 Submission Requirements: Glue Job Python code shows that the option to dynamically infer and update schema is enabled.
 To do this, set the Create a table in the Data Catalog and, on subsequent runs, update the schema and add new partitions option to True.
+
 ----
 Criteria: Use Athena to query Trusted Glue Tables
 
@@ -13,6 +14,7 @@ Count of customer_trusted: 482 rows
 The resulting customer_trusted data has no rows where shareWithResearchAsOfDate is blank.
 Count of accelerometer_trusted: 40981 rows
 Count of step_trainer_trusted: 14460 rows
+
 ----
 Criteria: Filter protected PII with Spark in Glue Jobs
 
